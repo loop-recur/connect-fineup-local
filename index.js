@@ -34,7 +34,7 @@ module.exports = mod = {
   mware: function(opts){
     //__dirname should be node_modules/connect-fineup-local from the app
     //root. We want the download to be relative to the apps public dir
-    var dir = __dirname+'../../public/'+opts.dir;
+    var dir = __dirname+'/../../public/'+opts.dir;
     return function(req, res, next){
       var bb = new Busboy({headers: req.headers});
       bb.on('file', function(fieldname, file, filename, encoding, mimetype){
