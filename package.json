@@ -1,0 +1,36 @@
+{
+  "name": "connect-fineup-local",
+  "version": "0.0.1",
+  "description": "Connect middleware and express routes for saving fineuploader uploads to the local filesystem.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loop-recur/connect-fineup-local.git"
+  },
+  "keywords": [
+    "upload",
+    "fineuploader",
+    "connect",
+    "middleware",
+    "express",
+    "multipart"
+  ],
+  "author": "Adam C. Baker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/loop-recur/connect-fineup-local/issues"
+  },
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "mocha": "~1.18.2"
+  },
+  "dependencies": {
+    "tmp": "0.0.23",
+    "bluebird": "~1.2.2",
+    "lodash": "~2.4.1",
+    "busboy": "~0.2.4"
+  }
+}
