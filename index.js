@@ -39,7 +39,7 @@ module.exports = mod = {
       var bb = new Busboy({headers: req.headers});
       bb.on('file', function(fieldname, file, filename, encoding, mimetype){
         mod.write(_.assign({}, opts, {dir: dir}), file).then(function(name){
-          res.fileUrl = req.headers.origin+'/'+opts.dir+'/'+name;
+          res.fileUrl = req.headers.host+'/'+opts.dir+'/'+name;
           next();
         }, function(err){console.log(err); res.send(500, err)});
       });
